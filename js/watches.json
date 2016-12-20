@@ -1,0 +1,33 @@
+{"watchebrands":
+[
+{
+		"brand": "Rolex",
+		"model": "Daytona",
+		"movement": "Manual winding",
+		"year": "1990",
+		"condition": "0(unworn)",
+		"price": 2125.00
+	}, {
+		"brand": "Omega",
+		"model": "Speedmaster",
+		"movement": "Manual winding",
+		"year": "1995",
+		"condition": "1(mint)",
+		"price": 3999.00
+	}, {
+		"brand": "Breitling",
+		"model": "Emergency",
+		"movement": "Quartz",
+		"year": "2000",
+		"condition": "2(fine)",
+		"price": 4500.00
+	}, {
+		"brand": "Patek Philippe ",
+		"model": "Nautilus",
+		"movement": "Automatic",
+		"year": "1965",
+		"condition": "1(mint)",
+		"price": 19000.00
+	}
+]
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="myWatches">
+	<head>
+	<title>Example to display JSON data using AngularJS?</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular.min.js"></script>
+	<script type="text/javascript">
+		var myWatches = angular.module('myWatches', []);
+		myWatches.controller('watchesCtrl', function($scope, $http) {
+			$http.get("js/watches.json").success(function (response) {
+			$scope.theWatches = response.watchebrands;});
+		});
+	</script>
+	</head>
+	<body ng-controller="watchesCtrl">
+		<table>
+			<tr>
+				<th>Brand</th>
+				<th>Model</th>
+				<th>Movement</th>
+				<th>Year</th>
+				<th>Condition</th>
+				<th>Price</th>
+			</tr>
+			<tr ng-repeat="watchType in theWatches">
+				<td>{{ watchType.brand }}</td>
+				<td>{{ watchType.model }}</td>
+				<td>{{ watchType.movement }}</td>
+				<td>{{ watchType.year }}</td>
+				<td>{{ watchType.condition }}</td>
+				<td>{{ watchType.price }}</td>
+			</tr>
+		</table>
+	</body>
+</html>
